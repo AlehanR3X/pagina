@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos de Mareas - Puertos de Ecuador</title>
+  <!-- Tipografía profesional -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <h1>Datos de Mareas</h1>
+      <p></p>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section id="search-section">
+        <input 
+          type="text" 
+          id="search-box" 
+          placeholder="Buscar puerto..." 
+          oninput="searchPorts()"
+        >
+      </section>
+      <section id="data-section">
+        <div class="table-container">
+          <table id="tides-table">
+            <thead>
+              <tr id="header-row">
+                <th rowspan="2">Fecha</th>
+              </tr>
+              <tr id="subheader-row">
+                <!-- Sub-encabezados se generarán dinámicamente -->
+              </tr>
+            </thead>
+            <tbody id="tides-data">
+              <!-- Datos se cargarán dinámicamente -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Institución de Mareas. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
